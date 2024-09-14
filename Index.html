@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://kit.fontawesome.com/d64c98006e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Logo2.png"class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h2>Hi, I'm <span> Mahima Sharma</span> <br> From Harda, M.P.</h2>
+            </div>
+        </div>
+    </div>
+    <!-- .................about................. -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Mahima.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello! I'm <b>Mahima Sharma</b>, a dedicated and innovative Web-Developer with a strong passion for technology and creating impactful digital experiences. I am pursuing my Masters in Computer Application from University School of Information, Communication and Technology (GGSIPU) New Delhi.  My journey into the world of web development started with a curiosity about how websites work, and it has grown into a full-fledged career where I get to build complex applications that solve real-world problems.
+                        <br>
+                        <br>
+                    My expertise spans across various technologies, including HTML, CSS, JavaScript, and React.js on the front end MySQL on the back end. This diverse skill set allows me to handle all aspects of web application development, from conceptualization and design to deployment and maintenance.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links active-link" onclick="opentab('education')" >Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>Tech Languages </span><br>C/C++, Python</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Fresher</span><br>Web Development</li>                         
+                        </ul>
+                    </div> 
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2017</span><br>10th From M.P. Board</li>
+                            <li><span>2019</span><br>12th From M.P. Board</li>
+                            <li><span>2022</span><br>B.Sc.(PCM) From Barkatulla University Bhopal, M.P. </li>
+                            <li><span>2023-Current</span><br>MCA From USICT (GGSIPU), New Delhi</li>
+                        </ul>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <!-- ----------services----------- -->
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, quibusdam. Veritatis pariatur, doloribus quia ab maiores voluptas unde enim ipsa aspernatur adipisci aliquid. Aspernatur odio velit sint iste suscipit temporibus?
+                    Cum, in. Est, illo ipsum cum corporis sunt corrupti, iusto voluptates saepe assumenda impedit ullam! Corrupti, ipsum doloribus earum commodi, sunt inventore nesciunt consectetur nulla omnis minus quis alias obcaecati.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, quibusdam. Veritatis pariatur, doloribus quia ab maiores voluptas unde enim ipsa aspernatur adipisci aliquid. Aspernatur odio velit sint iste suscipit temporibus?
+                    Cum, in. Est, illo ipsum cum corporis sunt corrupti, iusto voluptates saepe assumenda impedit ullam! Corrupti, ipsum doloribus earum commodi, sunt inventore nesciunt consectetur nulla omnis minus quis alias obcaecati.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, quibusdam. Veritatis pariatur, doloribus quia ab maiores voluptas unde enim ipsa aspernatur adipisci aliquid. Aspernatur odio velit sint iste suscipit temporibus?
+                    Cum, in. Est, illo ipsum cum corporis sunt corrupti, iusto voluptates saepe assumenda impedit ullam! Corrupti, ipsum doloribus earum commodi, sunt inventore nesciunt consectetur nulla omnis minus quis alias obcaecati.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+     </div>
+     <!-- ----------------\portfolio--------------- -->
+      <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work1.jpg" >
+                    <div class="layer">
+                        <h3><b>Shopping App</h3><br>
+                        <p>Using a shopping app user browse, search and buy products, manage orders and track deliveries, all from their phone.</b></p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+              
+                <div class="work">
+                    <img src="work3.png" >
+                    <div class="layer">
+                        <h3><b>Rock-Paper-Scissors</h3><br>
+                        <p>It is a simple game where players choose between rock, paper, or scissors. Rock beats scissors, scissors beats paper, and paper beats rock.</b></p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div> 
+                <div class="work"> 
+                    <img src="work4.png" >
+                    <div class="layer">
+                        <h3><b>Stopwatch </h3><br>
+                        <p>A stopwatch measures elapsed time with start, stop, and reset functions.
+                        </b></p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                    
+                </div> 
+                <div class="work">    
+                    <img src="work5.jpg" >
+                    <div class="layer">
+                        <h3><b>Tic-Tac-Toe </h3><br>
+                        <p>Tic-tac-toe is a game where two players take turns marking a 3x3 grid with Xs and Os, aiming to get three in a row horizontally, vertically or diagonally.
+                        </b></p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div> 
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+      </div>
+      <!-- -----------contact------------- -->
+       <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>mahimas1729@gmail.com</p>
+                    <p><i class="fa-sharp fa-solid fa-square-phone"></i>+91**********</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://leetcode.com/problemset/"><i class="fa-solid fa-code"></i></a>
+                        <a href="https://github.com/MahimaDS"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/mahima1706/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="Mahima_Sharma_Resume.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name"  placeholder="Your Name" required>
+                            <input type="text" name="Email"     placeholder="Your Email" required>
+                            <textarea name="Message" rows="6"   placeholder="Your Message"></textarea>
+                            <button type="Submit" class="btn btn2">Submit</button>
+                     </form>
+                     <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+       </div>
+        <div class="copyright">
+            <p>Copyright @ 2024 Mahima <i class="fa-solid fa-heart"></i> All rights Reserved. </p>
+       </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
